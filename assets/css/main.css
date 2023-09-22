@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300italic,600italic,300,600");
 
 /*
 	Dimension by HTML5 UP
@@ -141,8 +141,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
-		font-weight: 300;
+		font-family: "Dosis", Dosis;
+		font-weight: 400;
 		font-size: 1rem;
 		line-height: 1.65;
 	}
@@ -635,6 +635,44 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+/* Logo */
+
+	.logo {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.logo:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.logo > .label {
+			display: none;
+		}
+
+		.logo:before {
+			line-height: inherit;
+		}
+
+		.logo.solid:before {
+			font-weight: 900;
+		}
+
+		.logo.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+
 /* Image */
 
 	.image {
@@ -701,6 +739,9 @@ input, select, textarea {
 		}
 
 			.image.main img {
+				width: 100%;
+			}
+						.image.main video {
 				width: 100%;
 			}
 
@@ -1288,9 +1329,8 @@ input, select, textarea {
 			}
 
 		#header .logo {
-      display: grid;
-      place-items: center;
-
+display: flex;
+justify-content: center;
 
 		}
 
