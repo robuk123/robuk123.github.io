@@ -1145,8 +1145,9 @@ input, select, textarea {
 		line-height: calc(2.75rem - 2px);
 	}
 
-/* BG */
 
+
+/* BG */
 	#bg {
 		-moz-transform: scale(1.0);
 		-webkit-transform: scale(1.0);
@@ -1181,9 +1182,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1202,6 +1206,17 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
+		
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
@@ -1658,6 +1673,23 @@ justify-content: center;
 			}
 
 		}
+		
+/* Maps */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 /* Footer */
 
