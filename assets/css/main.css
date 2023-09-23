@@ -1451,7 +1451,7 @@ justify-content: center;
 			-webkit-filter: blur(0.1rem);
 			-ms-filter: blur(0.1rem);
 			filter: blur(0.1rem);
-			opacity: 0;
+			opacity: 40;
 		}
 
 		body.is-preload #header {
@@ -1597,7 +1597,7 @@ justify-content: center;
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(146, 131, 93, 1);
 			border-radius: 4px;
 			opacity: 0;
 		}
